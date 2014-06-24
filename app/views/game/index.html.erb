@@ -1,0 +1,19 @@
+<h1>りんご狩りゲーム</h1>
+<img src="apple.png">
+  <ol>
+	<li>りんごが26個(普通のリンゴ25個,毒りんご1個)あります．</li>
+	<li>あなたは1,2,3,4のうち好きな数を選択し，その数だけリンゴをもらいます</li>
+	<li>コンピュータも1,2,3,4のうち好きな数を選択しリンゴをもらいます</li>
+  </ol>
+	<p>
+	2~3を繰り返します．
+	26個目のりんご(毒りんご)をコンピュータに取らせたら<b>あなたの勝ち</b>です
+	その場合にはflagを教えます.
+	</p>
+<%= form_tag(url_for(:action => 'index'), :remote => true, :id => "result_form") do |f| %>
+  <%= number_field_tag :plus,in: 1..3 %>
+  <%= hidden_field_tag :left,26 %>
+  <%= submit_tag "Get" %>
+<% end %>
+<div id="message"></div>
+残りのリンゴの数は<h1><div id="result">26</div></h1>個です．
