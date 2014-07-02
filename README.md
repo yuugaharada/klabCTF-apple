@@ -1,5 +1,4 @@
-りんご狩りゲーム
-APPLE HUNT GAME
+りんご狩りゲーム(APPLE HUNT GAME)
 ======================
 klabCTF用に作られたアプリケーションです．  
 This is the application I made for the KlabCTF.
